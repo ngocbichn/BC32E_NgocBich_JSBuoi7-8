@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Bai Tap JS Buoi 7+8</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container" style="margin-bottom: 500px; padding: 100px;">
+        <div class="alert alert-info form-group">
+            <h2>Thêm số để tạo mảng</h2>
+            <input class="form-control" id="themSo" placeholder="Nhập số" />
+            <button class="btn btn-warning mt-3" id="btnThemSo">Thêm số</button>
+            <h4 class="mt-5">Mảng được tạo:</h4>
+            <div class="alert alert-warning mt-3" id="arrNumber"></div>
+        </div>
+        <hr />
+        <!-- BAI 1 -->
+        <div class="card bg-success text-white">
+            <div class="card-header">
+                <h2>Bài 1: Tính tổng các số dương trong mảng</h2>
+            </div>
+            <div class="card-body">
+                <button class="btn btn-dark mt-2" id="btnTinhTongSoDuong">Tính tổng</button>
+                <div class="alert alert-warning mt-2" id="ketQua_B1"></div>
+            </div>
+        </div>
+        <hr />
+        <!-- BAI 2 -->
+        <div class="card bg-light">
+            <div class="card-header">
+                <h2>Bài 2: Đếm số dương trong mảng</h2>
+            </div>
+            <div class="card-body">
+                <button class="btn btn-danger mt-2" id="btnDemSoDuong">Đếm số dương</button>
+                <div class="alert alert-danger mt-2" id="ketQua_B2"></div>
+            </div>
+        </div>
+        <hr />
+        <!-- BAI 3 -->
+        <div class="card bg-warning">
+            <div class="card-header">
+                <h2>Bài 3: Tìm số nhỏ nhất trong mảng</h2>
+            </div>
+            <div class="card-body">
+                <button class="btn btn-dark mt-2" id="btnTimSoNhoNhat">Tìm số nhỏ nhất</button>
+                <div class="alert alert-success mt-2" id="ketQua_B3"></div>
+            </div>
+        </div>
+        <hr />
+        <!-- BAI 4 -->
+        <div class="card bg-info text-white">
+            <div class="card-header">
+                <h2>Bài 4: Tìm số dương nhỏ nhất trong mảng</h2>
+            </div>
+            <div class="card-body">
+                <button class="btn btn-dark mt-2" id="btnSoDuongMin">Tìm kiếm</button>
+                <div class="alert alert-warning mt-2" id="ketQua_B4"></div>
+            </div>
+        </div>
+        <hr />
+        <!-- BAI 5 -->
+        <div class="card bg-dark text-white">
+            <div class="card-header">
+                <h2>Bài 5: Tìm số chẵn cuối cùng trong mảng</h2>
+            </div>
+            <div class="card-body">
+                <button class="btn btn-warning mt-2" id="btnSoChanCuoiCung">Tìm số chẵn cuối cùng</button>
+                <div class="alert alert-warning mt-2" id="ketQua_B5"></div>
+            </div>
+        </div>
+        <hr />
+        <!-- BAI 6 -->
+        <div class="card bg-light">
+            <div class="card-header">
+                <h2>Bài 6: Đổi chỗ hai giá trị trong mảng theo vị trí người dùng nhập vào</h2>
+            </div>
+            <div class="card-body">
+                <div class="row form-group">
+                    <div class="col-4">
+                        <h5>Vị trí 1:</h5>
+                        <input class="form-control" id="viTri1" />
+                    </div>
+                    <div class="col-4">
+                        <h5>Vị trí 2:</h5>
+                        <input class="form-control" id="viTri2" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-info mt-2" id="btnDoiViTri">Đổi vị trí</button>
+                    <div class="alert alert-info mt-2" id="ketQua_B6"></div>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <!-- BAI 7 -->
+        <div class="card bg-warning text-white">
+            <div class="card-header">
+                <h2>Bài 7: Sắp xếp mảng theo thứ tự tăng dần</h2>
+            </div>
+            <div class="card-body">
+                <button class="btn btn-danger mt-2" id="btnSapXep">Sắp xếp</button>
+                <div class="alert alert-danger mt-2" id="ketQua_B7"></div>
+            </div>
+        </div>
+        <hr />
+        <!-- BAI 8 -->
+        <div class="card bg-success text-white">
+            <div class="card-header">
+                <h2>Bài 8: Tìm số nguyên tố đầu tiên trong mảng</h2>
+            </div>
+            <div class="card-body">
+                <button class="btn btn-dark mt-2" id="btnTimKiem">Tìm kiếm</button>
+                <div class="alert alert-warning mt-2" id="ketQua_B8"></div>
+            </div>
+        </div>
+        <hr />
+        <!-- BAI 9 -->
+        <div class="card bg-dark text-white">
+            <div class="card-header">
+                <h2>Bài 9: Nhập thêm 1 mảng mới, đếm số lượng số nguyên có trong mảng</h2>
+            </div>
+            <div class="card-body">
+                <div class="alert alert-success form-group">
+                    <input class="form-control" id="themSoMangMoi" placeholder="Nhập số" />
+                    <button class="btn btn-success mt-2" id="btnThemSoMangMoi">Thêm số</button>
+                    <h5 class="mt-3">Mảng mới:</h5>
+                    <div class="alert alert-light mt-2" id="newArr"></div>
+                </div>
+                <div class="alert alert-warning form-group">
+                    <button class="btn btn-warning mt-2" id="btnKiemTraSoNguyen">Số lượng số nguyên</button>
+                    <div class="alert alert-light mt-2" id="ketQua_B9"></div>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <!-- BAI 10 -->
+        <div class="card bg-light">
+            <div class="card-header">
+                <h2>Bài 10: So sánh số lượng số âm và số dương trong mảng</h2>
+            </div>
+            <div class="card-body">
+                <button class="btn btn-info mt-2" id="btnSoSanh">So sánh</button>
+                <div class="alert alert-info mt-2" id="ketQua_B10"></div>
+            </div>
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="./index.js"></script>
+        <script src="./method/method.js"></script>
+</body>
+
+</html>
